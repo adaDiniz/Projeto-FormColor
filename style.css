@@ -1,64 +1,73 @@
+html body {
+height: 100%;
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
 body{
-  background-image: url(./pexels-gradienta-6984988.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
+  background-image: linear-gradient(to left top, red, blue, green);
   background-attachment: fixed;
-  background-position: center;
   font-family:-apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .principal{
-  background-color: rgba(255, 255, 255, 0.904);
-  padding: 10px 10px;
-  width: 35%;
-  margin: 20% auto ;
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.678);
+  padding: 20px 20px;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   border: 1px solid rgba(128, 0, 128, 0.089);
-  border-radius: 50px;
+  border-radius: 40px;
+  text-align: center;
 }
 
 h1 {
-  text-shadow: 1px 2px plum;
+  text-shadow: 1px 1px rgb(58, 58, 58), 2px 2px rgb(102, 102, 102), 3px 3px rgb(150, 150, 150);
 }
 
 input {
   width: 80%;
-  padding: 10px 15px;
+  padding: 10px 10px;
   margin: 5px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 4px;
-  box-sizing: border-box;
+}
+
+#color {
+  width: 20%;
 }
 
 input:focus {
-  background-color: rgba(136, 136, 136, 0.3);
-}
-
-select {
-  padding: 10px 10px;
+  background-color: rgba(255, 254, 254, 0.884);
   border: none;
-  border-bottom: 1px solid rgb(0, 0, 0, 0.5);
-  border-radius: 4px;
-  box-sizing: border-box;
-  background-color: rgb(255, 255, 255);
-  color:rgba(0, 0, 0);
 }
 
 #checkbox{
-  margin: 15px;
+  margin: 10px;
   width: 15px;
 }
 
 .submit{
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  width: 50%;
+  width: 40%;
+}
+
+.submit:hover {
+  background-color: rgba(137, 43, 226, 0.205);
 }
 
 footer {
-  background-color: rgb(189, 189, 189);
+  background-color: rgba(189, 189, 189, 0.281);
+  font-size: 15px;
+  color: white;
   width: 100%;
-  padding: 5%;
-  
+  height: 5%;
+  position: absolute;
+  top: 95%;
+  text-align: center; 
 }
